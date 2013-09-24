@@ -1,4 +1,6 @@
 Quotes::Application.routes.draw do
+  resources :subscribers
+
   resources :quotes
 
   resources :movies
