@@ -1,0 +1,13 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Movie:</strong>
+  <%= link_to @quote.movie.title, @quote.movie %>
+</p>
+
+<p>
+  <%= simple_format @quote.text %>
+</p>
+
+<%= link_to 'Edit', edit_quote_path(@quote) %> |
+<%= link_to 'Back', quotes_path %>
